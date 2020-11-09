@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Jessica Gleason's blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicargleason/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicargleason/blog/issues"
+  },
+  "homepage": "https://github.com/jessicargleason/blog#readme",
+  "devDependencies": {
+    "hexo": "^5.2.0"
+  }
+}

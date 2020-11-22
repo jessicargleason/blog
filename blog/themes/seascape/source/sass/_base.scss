@@ -78,7 +78,7 @@ html {
 
 body {
 	background: url(../img/sea-repeat-xy.jpg) repeat;
-	color: rgb(205, 230, 245);
+	color:#212121;
 	padding: 0;
 	font-family: 'Bree Serif', serif;
 	animation: sea 60s linear infinite;
@@ -90,23 +90,25 @@ body {
 	}
 }
 
-a:link {
-	color: #6ac9f5;
+a:link, a:visited {
+	color: #FFFFFA;
+	border-bottom: #f0a202 solid;
 	text-decoration: none;
-	border-bottom: 2px dashed #047000;
-}
-
-a:visited {
-	color: #72d66f;
 }
 
 a:hover, a:active {
-	color: #A74301;
-	border-bottom-color: #A74301;
+	color: #FFFFFA;
+	border-bottom-color: #ffffff;
+}
+
+.skill {
+	color: #000000;
+	font-weight: bold;
 }
 
 h2 {
 	font-size: 1.8em;
+	color: #000000;
 }
 
 header {
@@ -191,11 +193,14 @@ ul {
 	display: none;
 	position: relative;
 	max-width: 100%;
+	opacity: .8;
 	@media screen and (min-width: 900px) {
 		display: block;
 	}
-	img {
-		max-width: 100%;
+	svg {
+		color: #E67399;
+		width: 150px;
+		height: 180px;
 	}
 }
 
@@ -230,13 +235,17 @@ ul {
 	max-width: 35em;
 }
 
+.featured {
+	font-size: 1.2em;
+}
+
 button, .button {
 	display: inline-block;
 	padding: 10px 15px;
 	margin: 5px;
 	border-radius: 5px;
 	border: none;
-	background-color: #006594;
+	background-color: #1f5463;
 	color: #fff;
 	cursor: pointer;
 	&:link, &:visited {

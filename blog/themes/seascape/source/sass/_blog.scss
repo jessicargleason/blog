@@ -8,3 +8,61 @@
 .article-meta {
     padding-top: 25px;
 }
+
+.blog-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.blog-nav {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-nav-link {
+    margin-right: 15px;
+    svg {
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+        margin: 5px;
+        color: #000;
+    }
+    .blog-nav-home & {
+        &:link, &:visited {
+            color: #000;
+        }
+    }
+    &:link, &:visited {
+        border: none;
+    }
+    &:hover .blog-nav-text {
+        border-bottom-color: #fff;
+    }
+}
+
+.blog-nav-text {
+    border-bottom: 3px solid #f0a202;
+}
+
+.widget-wrap {
+    padding: 15px 25px;
+    border: 3px solid rgba(255,255,255,.5);
+    margin-bottom: 15px;
+}
+
+.article-tag-list-link {
+    display: inline-block;
+    background-color: #f0a202;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    font-size: .8rem;
+    padding: 2px 5px;
+    &:link, &:visited {
+        color: #000;
+    }
+}

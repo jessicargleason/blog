@@ -131,8 +131,6 @@ header {
 	overflow: hidden;
 	text-align: center;
 	min-height: 10vh;
-	padding-left: 15px;
-	padding-right: 15px;
 	padding-bottom: 100px;
 	color: #000;
 	@media (prefers-reduced-motion: reduce) {
@@ -141,9 +139,13 @@ header {
 	h1 {
 		font-size: 3.5rem;
 		margin-bottom: 0;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	p {
 		font-size: 1.5rem;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 

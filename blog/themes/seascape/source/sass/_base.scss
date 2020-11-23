@@ -78,6 +78,7 @@ html {
 
 body {
 	background: url(../img/sea-repeat-xy.jpg) repeat;
+	background-color: #379AB2;
 	color:#212121;
 	padding: 0;
 	font-family: 'Bree Serif', serif;
@@ -109,6 +110,16 @@ a:hover, a:active {
 h2 {
 	font-size: 1.8em;
 	color: #000000;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
 header {
@@ -149,8 +160,13 @@ footer {
 	//height: 25vh;
 	padding: 0 15px 25px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: flex-end;
+	small {
+		display: inline-block;
+		padding: 2px;
+		background-color: rgba(55,154,178,.7)
+	}
 	@media screen and (min-width: 900px) {
 		padding-left: 100px;
 		padding-right: 100px;
@@ -171,6 +187,9 @@ ul {
 	list-style-type: none;
 	padding-left: 0;
 	margin-left: 0;
+}
+
+.project-grid {
 	@media screen and (min-width: 768px) {
 		display: grid;
 		grid-gap: 30px;
@@ -184,42 +203,37 @@ ul {
 	}
 }
 
+.project-listing {
+	img {
+		max-width: 100%;
+	}
+	li {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 30px;
+		@media screen and (min-width: 900px) {
+			flex-direction: row;
+		}
+	}
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.project-listing__image {
+	flex-shrink: 0;
+	margin-bottom: 15px;
+	a {
+		border-bottom: none;
+	}
+	@media screen and (min-width: 900px) {
+		flex-basis: 330px;
+		padding: 0 15px;
+	}
+}
+
 .flex {
 	display: flex;
-}
-
-
-.deco {
-	display: none;
-	position: relative;
-	max-width: 100%;
-	opacity: .8;
-	@media screen and (min-width: 900px) {
-		display: block;
-	}
-	svg {
-		color: #E67399;
-		width: 150px;
-		height: 180px;
-	}
-}
-
-.seahorse {
-	animation: seahorse 6s infinite ease-in-out;
-	position: relative;
-	margin: 15px;
-	@media (prefers-reduced-motion: reduce) {
-		animation: none;
-	}
-}
-
-.diver {
-	animation: diver 3s infinite ease-in;
-	position: relative;
-	margin: 15px;
-	@media (prefers-reduced-motion: reduce) {
-		animation: none;
-	}
 }
 
 .intro {
@@ -237,6 +251,14 @@ ul {
 
 .featured {
 	font-size: 1.2em;
+}
+
+.social {
+	margin-right: 15px;
+	svg {
+		width: 45px;
+		height: 45px;
+	}
 }
 
 button, .button {

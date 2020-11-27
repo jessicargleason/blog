@@ -13,8 +13,8 @@ timezone: America/Chicago
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://www.jessicagleason.com
-root: /
+url: https://www.jessicagleason.com/blog-test/
+root: /blog-test/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

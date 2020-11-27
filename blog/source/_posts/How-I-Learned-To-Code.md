@@ -1,7 +1,8 @@
 ---
 title: How I Learned To Code
 date: 2020-11-08 10:20:38
-tags: experience
+tags: 
+- experience
 ---
 
 I have this distinct memory of being about eleven years old and posting in a forum thread where someone was volunteering to make signatures for people—a piece of text that would appear under each of your posts on the forum. Using HTML, they took my username, put it the System font so it was robotic looking, added a lime green glow around it and a marquee effect that made it bounce around. I loved it. I didn't understand what the HTML that made it work was doing but I wished I did. It seemed to me a really impressive and powerful kind of knowledge to have.

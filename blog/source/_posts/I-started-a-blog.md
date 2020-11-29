@@ -1,5 +1,5 @@
 ---
-title: I started a blog!
+title: I Started a Blog!
 date: 2020-11-29 15:00:12
 tags:
     - experience

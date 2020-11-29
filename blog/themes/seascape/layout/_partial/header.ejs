@@ -9,12 +9,5 @@
       <span class="blog-nav-text">Blog Home</span>
     </a>
   </nav>
-  <%
-  var title = "Jessica Gleason's Blog";
-
-  if (is_tag()){
-    title = __('tag') + ': ' + page.tag;
-  }
-  %>
-  <h1><% if (title){ %><%= title %><% } %></h1>
+  <h1><% if (page.tag){ %>tag: <%= page.tag %> - <% } %>Jessica Gleason's Blog</h1>
 </header>

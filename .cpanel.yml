@@ -1,5 +1,5 @@
 --- 
 deployment: 
      tasks: 
-          - export DEPLOYPATH=/home/stellmon/public_html/portfolio/blog-test/
+          - export DEPLOYPATH=/home/stellmon/public_html/portfolio/
           - /bin/cp -R blog/public/* $DEPLOYPATH

@@ -5,13 +5,24 @@
     padding-right: 15px;
 }
 
+.article-entry {
+    ul {
+        list-style-type: disc;
+        padding-left: 2rem;
+        li {
+            margin-bottom: .5rem;
+        }
+    }
+}
+
 .article-meta {
     display: flex;
     align-items: center;
 }
 
-.article-tag-list {
+ul.article-tag-list {
     display: flex;
+    list-style-type: none;
     .article-tag-list-item {
         margin-left: 10px;
     }

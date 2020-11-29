@@ -9,6 +9,12 @@
       <span class="blog-nav-text">Blog Home</span>
     </a>
   </nav>
-  <h1>Waves</h1>
-  <p>Blog of Web Developer Jessica Gleason</p>
+  <%
+  var title = "Jessica Gleason's Blog";
+
+  if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <h1><% if (title){ %><%= title %><% } %></h1>
 </header>

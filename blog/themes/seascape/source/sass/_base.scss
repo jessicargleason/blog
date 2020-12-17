@@ -92,14 +92,15 @@ body {
 }
 
 a:link, a:visited {
-	color: #FFFFFA;
+	color: #1f5463;
 	border-bottom: #f0a202 solid;
 	text-decoration: none;
 }
 
-a:hover, a:active {
-	color: #FFFFFA;
+a:hover, a:active, a:focus {
+	color: #000000;
 	border-bottom-color: #ffffff;
+	outline-offset: 2px;
 }
 
 .skill {

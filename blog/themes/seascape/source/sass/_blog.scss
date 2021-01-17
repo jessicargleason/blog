@@ -68,7 +68,7 @@ ul.article-tag-list {
 }
 
 .widget-wrap {
-    padding: 15px 25px;
+    padding: 10px 20px;
     border: 3px solid rgba(255,255,255,.5);
     margin-bottom: 15px;
 }
@@ -96,4 +96,8 @@ ul.article-tag-list {
     width: 100%;
     max-width: 600px;
     margin: 15px auto;
+}
+
+.recent-list-item {
+    margin-bottom: .25em;
 }

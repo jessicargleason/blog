@@ -92,7 +92,7 @@ body {
 }
 
 a:link, a:visited {
-	color: #1f5463;
+	color: #000000;
 	border-bottom: #f0a202 solid;
 	text-decoration: none;
 }
@@ -111,6 +111,7 @@ a:hover, a:active, a:focus {
 h2 {
 	font-size: 1.8em;
 	color: #000000;
+	margin-bottom: .25em;
 }
 
 .visually-hidden {

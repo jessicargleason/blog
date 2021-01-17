@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>Reading Refactoring UI and Redesigning BirthdayBot | Jessica Gleason - Web Developer</title>
+        <meta name="description" content="Jessica Gleason is a front-end web developer in Milwaukee, WI.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+				<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <meta name="generator" content="Hexo 5.2.0"></head>
+<body>
+  <nav class="blog-nav">
+    <a href="/blog" title="Blog Home" class="blog-nav-link">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
+      <span class="blog-nav-text">Blog Home</span>
+    </a>
+</nav>
+<article id="post-Reading-Refactoring-UI-and-Redesigning-BirthdayBot" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Reading Refactoring UI and Redesigning BirthdayBot
+    </h1>
+  
+
+    
+    <div class="article-meta">
+      <time datetime="2021-01-16T21:45:06.000Z" itemprop="datePublished">2021-01-16</time>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/design/" rel="tag">tag: design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/technical/" rel="tag">tag: technical</a></li></ul>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Resolving-to-be-a-better-designer"><a href="#Resolving-to-be-a-better-designer" class="headerlink" title="Resolving to be a better designer"></a>Resolving to be a better designer</h2><p>I have a few resolutions for 2021 and one of them is improving my UI design skills.</p>
+<p>Partly, this is for my career. As a front-end developer, I typically work closely with designers and my job often involves extrapolating from other people’s design work. I want to make sure that I’m always being empathetic to the designer’s goals and showing attention to detail. When designing things on my own, especially when I expect to add the project to my portfolio, I also want to make sure my interfaces represent me well as a front-end developer.</p>
+<p>But design is also fun! In my opinion, anyway. My college degree is partly in web design and there was a time when I considered specializing more in that direction. This year I’d like to create more web projects whose designs embrace the colorful, playful side of the internet, and I want to approach them with care.</p>
+<h2 id="Refactoring-UI"><a href="#Refactoring-UI" class="headerlink" title="Refactoring UI"></a>Refactoring UI</h2><p>So how to work on my design skills? I decided to start with a book that I’ve seen praised more than once among developers online: <a target="_blank" rel="noopener" href="https://refactoringui.com/book/">Refactoring UI by Adam Wathan and Steve Schoger</a> (who both work on Tailwind CSS). This book is meant specifically for developers who are trying to create interfaces without the help of a dedicated designer. </p>
+<p>It’s also… pretty expensive, if you don’t have the benefit of an educational budget from your employer. So I went into the book thinking that it better be mind-blowing. In reality: it wasn’t, but surprisingly, that’s what I loved about it. Everything they discussed seemed really obvious once they explained it. I just hadn’t thought about all those details so intentionally all at once.</p>
+<h2 id="Redesigning-BirthdayBot-the-front-end-anyway"><a href="#Redesigning-BirthdayBot-the-front-end-anyway" class="headerlink" title="Redesigning BirthdayBot (the front-end, anyway)"></a>Redesigning BirthdayBot (the front-end, anyway)</h2><p>Did I have a project with a UI that needed refactoring? It was obvious to me that the place to start was <a href="https://www.jessicagleason.com/birthday-bot">BirthdayBot</a>. BirthdayBot was originally an idea I had for a Slack bot that could pull key details about famous musicians (for use in a music-themed slack channel) on request. Instead, it got reworked into a little web app so that I could have an excuse to play around with Node and a templating language like Handlebars. And then in the end I slapped some fonts and colors on it and it was done–not exactly designed with care.</p>
+<img src="/2021/01/16/Reading-Refactoring-UI-and-Redesigning-BirthdayBot/birthday-bot-old.png" class="post-img" title="Screenshot of BirthdayBot before the redesign">
+
+<p>At the book’s suggestion, I resisted the urge to think about the overall layout first and instead zeroed in on some specific features and drew a rough concept on paper of how I could lay them out.</p>
+<img src="/2021/01/16/Reading-Refactoring-UI-and-Redesigning-BirthdayBot/sketch.jpg" class="post-img" title="Design elements drawn on a sketchpad with a sharpie">
+
+<h2 id="A-Technical-Interlude"><a href="#A-Technical-Interlude" class="headerlink" title="A Technical Interlude"></a>A Technical Interlude</h2><p>While it’s good to be cautious about taking on too much at once in any project, while I was redesigning my front-end anyway, there were a few new things I wanted to introduce.</p>
+<p>Firstly, this seemed like the perfect opportunity to check out <a target="_blank" rel="noopener" href="https://tailwindcss.com/">Tailwind CSS</a>! I’ve worked with utility class-based CSS on several different projects (and generally have positive opinions of it) but I’d only really done it with Bootstrap or custom CSS frameworks. It was really about time I gave Tailwind a try and I found it made a lot of sense and was quick for me to pick up. </p>
+<p>Even working with PostCSS instead of my usual Sass was pretty painless. That part of Tailwind had confused me a bit until I actually sat down and looked at it. I set up PostCSS with plugins like <a target="_blank" rel="noopener" href="https://github.com/postcss/postcss-nested">postcss-nested</a>, which allows for Sass-style nesting of selectors, and in the end I was writing code that was more or less the same that I’m used to writing with Sass anyway. And generally speaking, I’d already been using PostCSS on a lot of projects anyway via the autoprefixer plugin so there was nothing to be afraid of. I think I was getting a little too hung up on the idea of <em>preprocessors</em> vs <em>post-css</em> but the distinction ends up not being all that important in practice.</p>
+<p>Another thing I wanted to do with a BirthdayBot redesign is get myself a little more content to work with. When you do a search on BirthdayBot, it first goes to the WikiData API to get information about the person you searched for, and if WikiData knows that that person has music on Spotify, then the app uses the Spotify API to get some information about their music. In the original design, I was really only grabbing the person’s birthday, Spotify URL, and followers. This time, I looked more closely at the data I had available and am also grabbing a description about the person from WikiData and a photo of them from Spotify (where available).</p>
+<h2 id="Putting-it-in-practice"><a href="#Putting-it-in-practice" class="headerlink" title="Putting it in practice"></a>Putting it in practice</h2><p>Once I was set up to work with Tailwind, I started working through BirthdayBot piece by piece.</p>
+<p>Some helpful advice I took from <em>Refactoring UI</em> included things like:</p>
+<ul>
+<li><p>Giving things a LOT of space and then scaling back the space until it feels right</p>
+</li>
+<li><p>Using things like font weight and color to indicate importance or hierarchy even more than size</p>
+</li>
+<li><p>Using subtle patterns (like I have for BirthdayBot’s background) and strips of color (like the light border on the top of my page) to add some visual interest</p>
+</li>
+</ul>
+<p>Tailwind helped too–using the colors and spacing that ships with Tailwind gave some structure to this site that is a bit too small to justify having its own custom design system.</p>
+<img src="/2021/01/16/Reading-Refactoring-UI-and-Redesigning-BirthdayBot/birthday-bot-new.png" class="post-img" title="Screenshot of BirthdayBot after the redesign">
+
+<p>I love how the redesigned BirthdayBot, despite having only a couple pieces of new content compared to the old one, feels more substantial. At the same time, it does a better job of drawing your eye to the information that’s actually important.</p>
+<h2 id="In-Conclusion"><a href="#In-Conclusion" class="headerlink" title="In Conclusion"></a>In Conclusion</h2><p>I thought that <em>Refactoring UI</em> was a great book to start getting me thinking more carefully about design, and Tailwind ended up being a great tool that I’d be curious to try out on a larger project. And I’m proud of the new <a href="https://www.jessicagleason.com/birthday-bot">BirthdayBot</a>!</p>
+
+      
+    </div>
+  </div>
+</article>
+  <footer>
+  <small>Website by Jessica, built with <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>. Icons from <a href="https://fontawesome.com/license" target="_blank" rel="noopener noreferrer">Font Awesome</a>.</small>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78646106-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var scrollButton = document.getElementById("scroll");
+      
+      scrollButton.addEventListener("click", function(e) {
+        var viewport = window.innerHeight;
+        window.scroll({
+          top: viewport,
+          behavior: 'smooth'
+        });
+      });
+  });
+</script>
+</body>
+</html>

@@ -46,11 +46,11 @@ Once I was set up to work with Tailwind, I started working through BirthdayBot p
 
 Some helpful advice I took from *Refactoring UI* included things like:
 
-* Giving things a lotof space and then scaling back the space until it feels right
+* Giving things a lot of space and then scaling back the space until it feels right
 
 * Using font weight and color to indicate importance or hierarchy even more than size
 
-* Using subtle patterns (like I have for BirthdayBot's background) and strips of color (like the light border on the top of my page) to add some visual interest
+* Using subtle patterns (like I have for BirthdayBot's background) and strips of color (like the light border on the top of BirthdayBot) to add some visual interest
 
 Tailwind helped too--using the colors and spacing that ships with Tailwind gave some structure to this site that is a bit too small to justify having its own custom design system.
 

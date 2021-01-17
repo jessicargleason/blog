@@ -3,6 +3,11 @@
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
+    & + & {
+        padding-top: 50px;
+        margin-top: 50px;
+        border-top: 5px solid rgba(255,255,255,.5);
+    }
 }
 
 .article-entry {

@@ -1,0 +1,1 @@
+window.addEventListener("DOMContentLoaded",e=>{const t=document.getElementById("scroll"),n=document.getElementById("hero"),d=document.getElementById("main");t.addEventListener("click",function(){n.classList.add("dive"),d.scrollIntoView({behavior:"smooth"})})});

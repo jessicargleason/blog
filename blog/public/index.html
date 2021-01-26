@@ -11,14 +11,14 @@
 				<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <meta name="generator" content="Hexo 5.2.0"></head>
 <body>
-  <header class="hero">
+  <header class="hero" id="hero">
     <div class="intro">
         <h1>Hi! I'm Jessica.</h1>
         <p>Let me tell you a little bit about myself.</p>
-        <a href="#main" class="intro-button button" id="scroll">Dive In</a>
+        <button class="intro-button button" id="scroll">Dive In</button>
     </div>
 </header>
-<article id="main">
+<article id="main" class="main">
     <div>
             <h2>I'm a web developer.</h2>
         <div class="flex">
@@ -75,6 +75,17 @@
     <h2>Selected Professional Projects</h2>
     <p>These are some of my favorite projects I've been a part of in my working life. (Note: Live sites are only included here if they are close to how they appeared when I worked on them, but they may contain small elements introduced after I no longer maintained them.)</p>
     <ul class="project-listing">
+        <li id="project-fall-color">
+            <div class="project-listing__image">
+                <a href="https://www.masterlock.com" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/portfolio-masterlock.jpg" alt="Screencap of Masterlock website showing Celebrating 100 Years promotion" />
+                </a>
+            </div>
+            <div>
+                <h3><a href="https://www.masterlock.com" target="_blank">Master Lock Redesign</a></h3> 
+                <p>I lead front-end work on a partial redesign of the website for the Master Lock Company. In this first phase, the front-end was overhauled for the site's navigation and footer as well as product listings, product pages, and the homepage, which now features a full-screen video and animations controlled by the user's scroll. I also came up with a strategy for incorporating select redesign elements into the existing legacy pages as a stopgap until they are fully redesigned in future phases.</p>
+            </div>
+        </li>
         <li id="project-fall-color">
             <div class="project-listing__image">
                 <a href="https://www.travelwisconsin.com/fall-color-report" target="_blank" rel="noopener noreferrer">
@@ -200,18 +211,6 @@
 
 </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var scrollButton = document.getElementById("scroll");
-      
-      scrollButton.addEventListener("click", function(e) {
-        var viewport = window.innerHeight;
-        window.scroll({
-          top: viewport,
-          behavior: 'smooth'
-        });
-      });
-  });
-</script>
+<script src="/js-min/dive.js"></script>
 </body>
 </html>

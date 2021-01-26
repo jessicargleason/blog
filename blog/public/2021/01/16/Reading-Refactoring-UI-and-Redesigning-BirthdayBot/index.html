@@ -56,11 +56,11 @@
 <h2 id="Putting-it-in-practice"><a href="#Putting-it-in-practice" class="headerlink" title="Putting it in practice"></a>Putting it in practice</h2><p>Once I was set up to work with Tailwind, I started working through BirthdayBot piece by piece. I brought in some big icons from <a target="_blank" rel="noopener" href="https://iconmonstr.com/">IconMonstr</a>, some background colors to better separate sections of content, and kept the purple color scheme but ditched the gradient.</p>
 <p>Some helpful advice I took from <em>Refactoring UI</em> included things like:</p>
 <ul>
-<li><p>Giving things a lotof space and then scaling back the space until it feels right</p>
+<li><p>Giving things a lot of space and then scaling back the space until it feels right</p>
 </li>
 <li><p>Using font weight and color to indicate importance or hierarchy even more than size</p>
 </li>
-<li><p>Using subtle patterns (like I have for BirthdayBot’s background) and strips of color (like the light border on the top of my page) to add some visual interest</p>
+<li><p>Using subtle patterns (like I have for BirthdayBot’s background) and strips of color (like the light border on the top of BirthdayBot) to add some visual interest</p>
 </li>
 </ul>
 <p>Tailwind helped too–using the colors and spacing that ships with Tailwind gave some structure to this site that is a bit too small to justify having its own custom design system.</p>
@@ -87,18 +87,6 @@
 
 </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var scrollButton = document.getElementById("scroll");
-      
-      scrollButton.addEventListener("click", function(e) {
-        var viewport = window.innerHeight;
-        window.scroll({
-          top: viewport,
-          behavior: 'smooth'
-        });
-      });
-  });
-</script>
+<script src="/js-min/dive.js"></script>
 </body>
 </html>

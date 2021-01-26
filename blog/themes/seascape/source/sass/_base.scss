@@ -64,15 +64,27 @@ html {
 	}
 }
 
-@keyframes diver {
+@keyframes dive {
 	0% {
-		top: 0;
+		height: 100vh;
 	}
-	50% {
-		top: 10px;
+	75% {
+		height: 125vh;
 	}
 	100% {
-		top: 0;
+		height: 100vh;
+	}
+}
+
+@keyframes dive-body {
+	0% {
+		padding-top: 5vh;
+	}
+	75% {
+		padding-top: 0;
+	}
+	100% {
+		padding-top: 5vh;
 	}
 }
 
@@ -126,8 +138,7 @@ h2 {
 
 header {
 	background: url(../img/sky-repeat-xy.jpg) repeat;
-	animation: sky 60s linear infinite;
-	animation-direction: reverse;
+	animation: sky 60s linear infinite reverse;
 	mask-border: url(../img/wave.svg) 44 repeat;
 	mask-border-width: 0 0 70px 0;
 	overflow: hidden;
@@ -311,4 +322,10 @@ button:hover, .button:hover {
 	background-color: #007AB3;
 }
 
- 
+.dive {
+	animation: dive ease-in-out 1s forwards, sky 60s linear infinite reverse;
+}
+
+.dive + .main {
+	animation: dive-body ease-in-out 1s forwards;
+}

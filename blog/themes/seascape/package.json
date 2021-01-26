@@ -15,7 +15,9 @@
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "node-sass": "^5.0.0",
-    "postcss": "^8.1.6"
+    "postcss": "^8.1.6",
+    "readable-stream": "^3.6.0"
   }
 }

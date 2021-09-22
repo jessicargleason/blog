@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const hero =  document.getElementById("hero");
     const body = document.getElementById("main");
     button.addEventListener("click", function() {
-        hero.classList.add('dive');
         body.scrollIntoView({behavior: "smooth"});
     })
 });
